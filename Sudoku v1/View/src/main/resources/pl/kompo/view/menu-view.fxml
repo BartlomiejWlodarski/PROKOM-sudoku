@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="730.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.kompo.view.MenuController">
+   <children>
+      <HBox layoutX="97.0" layoutY="303.0" prefHeight="27.0" prefWidth="407.0">
+         <children>
+            <Label fx:id="selectDifficultyLabel" contentDisplay="CENTER" prefHeight="27.0" prefWidth="255.0" text="%sel_diff_label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="selectDifficultyCombo" prefHeight="25.0" prefWidth="172.0" promptText="%select_diff_combo_prompt" />
+         </children>
+      </HBox>
+      <Button fx:id="startGameBtn" layoutX="167.0" layoutY="435.0" mnemonicParsing="false" onAction="#onStartGameButtonClick" prefHeight="65.0" prefWidth="287.0" text="%start_game_btn" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="146.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label layoutX="200.0" layoutY="84.0" text="Sudoku">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <HBox layoutX="94.0" layoutY="365.0" prefHeight="27.0" prefWidth="414.0">
+         <children>
+            <Label fx:id="selectLanguageLabel" contentDisplay="CENTER" prefHeight="27.0" prefWidth="241.0" text="%sel_lang_label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="selectLanguageCombo" prefHeight="25.0" prefWidth="171.0" promptText="%select_lang_combo_prompt" />
+         </children>
+      </HBox>
+      <Button fx:id="showAuthorsBtn" layoutX="226.0" layoutY="557.0" mnemonicParsing="false" onAction="#onShowAuthorsButtonClick" prefHeight="25.0" prefWidth="149.0" text="%show_authors_btn" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="196.0" />
+   </children>
+</AnchorPane>
